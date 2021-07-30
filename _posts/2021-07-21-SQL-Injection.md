@@ -4,7 +4,7 @@ title:  "SQL Injections"
 author: adeesha
 categories: [Computer Security]
 tags: [ Computer Science,Database Security, SQL Injections ]
-image: "https://raw.githubusercontent.com/scienciax/sciencia/master/assets/images/posts/ajp/cov/sqli.png"
+image: "https://raw.githubusercontent.com/kenshare/cs/master/assets/images/posts/ajp/cov/sqli.png"
 
 ---
 

@@ -4,7 +4,7 @@ title:  "Introduction to Cyber Security"
 author: adeesha
 categories: [Computer Security]
 tags: [ Computer Science, Cyber Security]
-image: "https://raw.githubusercontent.com/scienciax/sciencia/master/assets/images/posts/ajp/cov/cybersec.jpg"
+image: "https://raw.githubusercontent.com/kenshare/cs/master/assets/images/posts/ajp/cov/cybersec.jpg"
 ---
 
 මේ ලිපි මාලාවේ මුලික අරමුණ වෙන්නෙ සයිබර් ආරක්ෂාවේ මුලිකම කරුණු ගැන ඉතාම සරළව පැහැදිලි කරන එක. ඒ සඳහා හැකිතාක් සරල, තාක්ෂණික හා තාක්ෂණික නොවන උදාහරණ යොදාගන්නත් බලාපොරොත්තු වෙනව.
