@@ -10,13 +10,9 @@ image: "https://raw.githubusercontent.com/kenshare/cs/master/assets/images/posts
 
 SQL Injection කියන්නෙ වෙබ් ආරක්ෂාව ගැන කතා කරනකොට මග හරින්නම බැරි මාතෘකාවක්. ඒ වගේම SQL Injection වලට ස්ථිරසාර විසඳුමක් දෙන එකත් කරන්න අපහසුම වැඩක්. SQL Injection ගැන හොයන්න කලින් අපිට සිද්ධ වෙනව Relational Database සහ SQL එහෙමත් නැත්තං Structured Query Language කියන්නෙ මොනවද කියල කෙටියෙන් දැනගන්න.
 
-
-
 #### Relational Database
 
 දත්ත ගබඩා කරන්නත් එකිනෙකට සම්බන්ධතා තියන, ගබඩා කරපු දත්ත වලට ප්‍රවේශය දෙන්නත් පුළුවන් විදිහට සැලසුම් කරපු ඩේටා බේස් වර්ගයක් තමයි Relational Database කියන්නෙ. මේ ඩේටාබේස් වල දත්ත ගබඩා කරන්නෙ වගු (table) වල. මේ වගුවක තීරු (Column) වලින් ඒ දත්ත වල උපලක්ෂණ එහෙමත් නැත්තං ගුණ (attributes) දක්වනව. එකඋපලක්ෂණයකට එක කොලම්එකක් බැගින් තියෙන්න ඕනි. හැම ටේබල් එකකටම එම දත්තයට විතරක් අනන්‍ය (unique) වෙච්ච ගුණයක් තියන කොලම් එකක් තියෙන්න ඕනි. මේ කොලම් එක ඒ ටේබල් එකේ කී (key) එක හැටියට සලකනව. (primary key etc..) මේ කී එක වෙන ටේබල් වල තියන කොලම් එකකට සමාන නං, ඒ හරහා ටේබල් අතර සම්බන්ධතාවය හදන්න පුළුවන්. මෙන්න මේ හේතුව නිසා මේ ඩේටාබේස් වර්ගයට Relational Database කියල කියන්නෙ.
-
-
 
 #### Structured Query Language
 
@@ -30,8 +26,6 @@ Relational Database වලින් වැඩ ගන්නම නිර්මා
 
 --------
 
-
-
 #### SQL Injections
 
 මොකක්ද මේ SQL Injections කියන්නෙ. මෙතනදී කරන්නෙ උඩ අපි උදාහරණෙ පෙන්නපු query එක වගේ එකක් රන් කරද්දී ඊට අමතරව වෙන query එකකුත් ඒත් එක්කම රන් කරන එක, වෙබ් ඇප්ලිකේෂන් එකෙන් පරිශීලකයාට ඉඩ දෙන query ඇරෙන්න වෙන query රන් කරවන එක වගේ වැඩ වලට. මෙතනදී SQL වල තියන සමහර පහසුකම් වැරදි විදිහට භාවිතා කිරීමක් සිද්ධ වෙනව. මෙතන තියන ලොකුම ප්‍රශ්නෙ මේ පහසුකම් නීත්‍යානුකුල වැඩ වලටත් අවශ්‍ය වෙන නිසා ඉවත් කරන්න බැරි එක. ඒ කියන්නෙ ඉතින් SQL පාවිච්චි වෙනකල් SQL Injections කියන ප්‍රශ්නයත් තියනව කියන එක තමයි.
@@ -44,14 +38,11 @@ Relational Database වලින් වැඩ ගන්නම නිර්මා
 
 <hr>
 
-
 <form>
   <label for="district">Province:</label><br>
   <input type="text" id="district" name="district"><br><br>
   <button disabled>Search Districts</button>
-</form> 
-
-
+</form>
 
 <hr>
 
@@ -87,12 +78,9 @@ echo "District: {$row['NameDistrict']}".
 
 }
 
-
-
 <hr>
 
 දැන් අපි උඩ තියන උදාහරණය එක්කම පොඩ්ඩක් පැහැදිලි කරන්න බලමු SQL Injection එකක් වැඩ කරන හැටි.
-
 
 උඩ තියන query එක වෙන්නෙ SELECT * FROM districts WHERE province = 'south' කියන එක. අපි මේක පහසු වෙන්න කොටස් වලට කඩාගමු
 
@@ -120,8 +108,6 @@ SELECT * FROM districts WHERE province = 'south' OR 'zoo' = 'zoo' කියන q
 
 කියන විධාන දෙකම එකවර ";" මගින් වෙන් කරල දෙන්න පුළුවන්. ඒ හරහා users කියන ටේබල් එක මකන්න පුළුවන්.
 
-
-
 #### SQL Injections ප්‍රහාර වර්ග
 
 **Unsanitized Input** - පරිශීලකයාගෙන් එන දත්ත හරියට "පිරිසිදු" නොකර පාවිච්චි කරනව නං මේ වගේ ප්‍රහාර වලට ලක්වෙන්න හොඳටම ඉඩ තියනව. sanitize කරනව කියන එකෙන් කරන්නෙ පරිශීලකයාගෙන් එන දත්ත අපි බලාපොරොත්තු වෙන විදිහට තියනවද කියල තහවරු කරලා, එහෙම නැති දත්ත නොසලකා හරින එක හරි පරිශීලකයා එවන දත්ත වල අනවශ්‍ය characters තියනව නං එවුව අයින් කරන එක. !, $, %, * වගේ characters තියනව නං අනිවාර්යයෙන් එවුව අයින් කරන්න ඕනි. php වල තියන real_escape_string වගේ උපක්‍රම වලින් මේ වැඩේ කරන්න පුළුවන්.
@@ -129,8 +115,6 @@ SELECT * FROM districts WHERE province = 'south' OR 'zoo' = 'zoo' කියන q
 **Blind SQL Injection** - මෙතනදී කරන්නෙ True or False වර්ගයේ queries විතරක් පාවිච්චි කරල ඒ queries වලට එන ප්‍රතිචාරය අනුව ඩේටාබේස් එකේ තොරතුරු දැනගන්න එක. මේ ක්‍රමය පාවිච්චි වෙන්නෙ වැරදි queries වලට ඩේටාබේස් එකෙන් දෙන error message වෙනුවට generic error messages පෙන්නන විදිහට ආරක්‍ෂිත උපක්‍රම පාවිච්චි කරන අවස්ථා වල. ඒ වගේම Time-based Blind SQL injection වලදී queries වලින් ප්‍රථිපල එන එක යම් කාලයක් ප්‍රමාද කරනව. මේ ප්‍රමාද වෙන කාලය ඇසුරෙන් True or False තත්වය තීරණය කරනව.
 
 **Out-of-Band Injection** - කෙලින්ම query වලට ප්‍රතිචාර ගන්න බැරි අවස්ථා වලදී විශේෂ queries පාවිච්චි කරල ඩේටාබේස් සර්වර් එක ප්‍රහාරකයා විසින් පාලනය කරන සර්වර් එකකට සම්බන්ධ වෙන්න සලස්වල අවශ්‍ය තොරතුරු ගන්න එක. මේක තරමක් සංකීර්ණ ක්‍රමයක් ලු.
-
-
 
 #### SQL Injections වලින් බේරෙන හැටි
 
@@ -148,11 +132,7 @@ SELECT * FROM districts WHERE province = 'south' OR 'zoo' = 'zoo' කියන q
 
 **Up-to-date Database**  - ඩේටාබේස් සර්වර් හරියට යාවත්කාලීන කරලා තියන්න අවශ්‍යයි. එතකොට ඩේටාබේස් සර්වර් එකේ තියන දුර්වලතා හරහා එන ප්‍රහාර වලින් වැළකෙන්න පුළුවන්.
 
-
-
 **මේ ලිපියෙන් ඉදිරිපත් කරේ SQL Injection ගැන පොඩි විස්තරයක්.**
-
-
 
 **Reference**
 
@@ -175,8 +155,6 @@ Clarke, J. (2009) “What Is SQL Injection?,” in *SQL Injection Attacks and De
 Morgan, D. (2006) “Web application security – SQL injection attacks,” *Network security*, 2006(4), pp. 4–5.
 
 Cherry, D. (2015) “SQL Injection Attacks,” in *Securing SQL Server*. Elsevier, pp. 265–291.
-
-
 
 **Image Credits**
 

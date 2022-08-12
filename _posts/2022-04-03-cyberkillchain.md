@@ -42,15 +42,11 @@ CIA Triad එක වගේම සයිබර් ආරක්ෂාව ගැන
 
 මේ ෆ්‍රේම්වර්ක් එකට වඩා සවිස්තරාත්මක ෆ්‍රේම්වර්ක් දෙකක් Mitre කියන සමාගමෙන් ඉදිරිපත් කරල තියනව. එකක් තමයි MITRE D3FEND™. මේකෙන් කරන්නෙ සයිබර් ආරක්ෂාවට අදාළ කරුණු ආවරණය කරන එක (Blue teaming). අනිත් එක තමයි MITRE ATT&CK®. මේකෙන් කරන්නෙ penitration testing පැත්ත ආවරණය කරන එක (Red teaming). මේ දෙක ගැන පස්සෙ කථා කරමු.
 
-
-
 **Reference**
 
 [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 
 GAINING THE ADVANTAGE - Applying Cyber Kill Chain® Methodology to Network Defense - Lockheed Martin
-
-
 
 **Image Credits**
 
