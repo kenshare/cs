@@ -72,4 +72,4 @@ image: "https://raw.githubusercontent.com/kenshare/cs/master/assets/images/posts
 
 #### **Image Credits**
 
-[Cover Image]([Windows Vs Mac Vs Linux: 10 Funny Jokes In Pictures](https://itsfoss.com/10-funny-jokes-pictures-windows-mac-linux/)
+[Cover Image](https://itsfoss.com/10-funny-jokes-pictures-windows-mac-linux/)
